@@ -1,0 +1,108 @@
+
+.img {
+    max-width: 80%;
+    height: auto;
+    object-fit:fill;
+}
+
+.section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8 {
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    overflow:hidden;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.purple{
+    background-color: hsl(256, 67%, 59%);
+    color:  hsl(0, 0%, 100%);
+}
+.violet{
+    background-color: hsl(254, 88%, 90%);
+}
+.yellow{
+    background-color: hsl(39, 100%, 71%);
+}
+.bage{
+    background-color: hsl(31, 66%, 93%);
+}
+*{
+    font-family: "DM Sansf";
+    font-family:sans-serif;
+    
+}
+p{
+    font-size: 18px;
+    font-weight: 400;
+}
+@media screen and (min-width: 376px){
+    .flex{
+        display: flex;
+        flex-direction: row;
+    }
+    .center-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1.2fr 1fr;
+        grid-template-areas: 
+            "sm10 sm10 schd"
+            "map macp schd";
+        gap: 10px;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .bottom-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "fgr gr gr";
+        gap: 10px;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .left-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "cre"
+            "cre"
+            "ai"
+            "ai";
+        gap: 10px;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-areas:
+          "lft cntr cntr cntr"
+          "lft cntr cntr cntr"
+          "lft btm btm btm"; 
+        width: 90vw; 
+        height: 90vh; 
+        margin: 30px 50px;
+      }
+    
+    .left{ grid-area: lft;}
+    .center{ grid-area: cntr;}
+    .bottom{grid-area: btm;}
+    .section1{grid-area: sm10;}
+    .section2{grid-area: map;}
+    .section3{grid-area: macp;}
+    .section4{grid-area: schd;}
+    .section5{grid-area: gr;}
+    .section6{grid-area: fgr;}
+    .section7{grid-area: cre;}
+    .section8{grid-area: ai;}
+    
+    
+}
